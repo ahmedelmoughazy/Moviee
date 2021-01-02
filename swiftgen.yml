@@ -1,0 +1,20 @@
+strings:
+  inputs: Piflow/Resources/Localization/en.lproj
+  outputs:
+    templatePath: Piflow/Resources/Template/custom-structured-swift4.stencil
+    output: Piflow/Resources/Localization/Localizable.swift
+
+xcassets:
+  inputs:
+  - Piflow/Resources/Colors/Colors.xcassets
+  - Piflow/Resources/Images/Images.xcassets
+  outputs:
+    templateName: swift4
+    output: Piflow/Resources/Assets.swift
+
+fonts:
+ inputs: Piflow/Resources/Fonts/
+ filter: .+\.ttf$
+ outputs:
+   templateName: swift4
+   output:  Piflow/Resources/Fonts.swift
